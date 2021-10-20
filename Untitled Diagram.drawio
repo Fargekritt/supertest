@@ -1,1 +1,43 @@
-<mxfile host="app.diagrams.net" modified="2021-10-20T13:56:20.454Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" version="15.0.6" etag="6xeaARo8JQg6sQ2I810J" type="github"><diagram id="DzuEHASwHjStUSuicYo3">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-10-20T14:33:20.922Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36" etag="wAF_FaoYIHTywzG-t_43" version="15.0.6" type="github">
+  <diagram id="DzuEHASwHjStUSuicYo3" name="Page-1">
+    <mxGraphModel dx="865" dy="408" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4_UfO84LGoLxzmRA_Yhv-1" value="Rute" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="50" y="320" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="4_UfO84LGoLxzmRA_Yhv-2" value="rutenr PK&#xa;avgtid&#xa;frakode FK&#xa;anktid&#xa;tilkode FK" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="4_UfO84LGoLxzmRA_Yhv-1">
+          <mxGeometry y="30" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4_UfO84LGoLxzmRA_Yhv-26" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=ERzeroToMany;startFill=1;endArrow=ERmandOne;endFill=0;strokeColor=#000000;" edge="1" parent="1" source="4_UfO84LGoLxzmRA_Yhv-3" target="4_UfO84LGoLxzmRA_Yhv-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="4_UfO84LGoLxzmRA_Yhv-3" value="Reservasjon" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="50" y="140" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="4_UfO84LGoLxzmRA_Yhv-4" value="resnr PK&#xa;rutenr FK&#xa;dato&#xa;antall&#xa;kapasitet&#xa;navn" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="4_UfO84LGoLxzmRA_Yhv-3">
+          <mxGeometry y="30" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4_UfO84LGoLxzmRA_Yhv-5" value="flyplass" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;" vertex="1" parent="1">
+          <mxGeometry x="370" y="320" width="160" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="4_UfO84LGoLxzmRA_Yhv-6" value="kode PK&#xa;plass&#xa;by" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;" vertex="1" parent="4_UfO84LGoLxzmRA_Yhv-5">
+          <mxGeometry y="30" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="4_UfO84LGoLxzmRA_Yhv-23" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;startArrow=ERzeroToMany;startFill=1;endArrow=ERmandOne;endFill=0;strokeColor=#000000;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" source="4_UfO84LGoLxzmRA_Yhv-2" target="4_UfO84LGoLxzmRA_Yhv-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="420" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="310" y="418" />
+              <mxPoint x="310" y="418" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4_UfO84LGoLxzmRA_Yhv-25" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=ERzeroToMany;startFill=1;endArrow=ERmandOne;endFill=0;strokeColor=#000000;" edge="1" parent="1" source="4_UfO84LGoLxzmRA_Yhv-2" target="4_UfO84LGoLxzmRA_Yhv-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
